@@ -20,10 +20,10 @@ spec:
                 port:
                   number: 9093
 
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: eureka-service
-                port:
-                  number: 8761
+          # - path: /
+          #   pathType: Prefix
+          #   backend:
+          #     service:
+          #       name: eureka-service
+          #       port:
+          #         number: 8761
