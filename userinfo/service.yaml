@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: userinfo-service
   namespace: rony-hms
-
+  labels:
+    app: userinfo        # NEW: the ServiceMonitor finds the Service by this label
 spec:
   selector:
     app: userinfo
-
   ports:
-  - port: 9093
+  - name: http           # NEW: the ServiceMonitor refers to the port by this name
+    port: 9093
     targetPort: 9093
-
   type: ClusterIP
