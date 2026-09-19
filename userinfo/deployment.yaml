@@ -20,7 +20,7 @@ spec:
       containers:
       - name: userinfo
 
-        image: docker push 816069140701.dkr.ecr.ap-south-1.amazonaws.com/restaurant/userrepo:v2.0
+        image: 816069140701.dkr.ecr.ap-south-1.amazonaws.com/restaurant/userrepo:v2.0
 
         imagePullPolicy: Always
 
